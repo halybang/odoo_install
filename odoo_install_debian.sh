@@ -254,9 +254,9 @@ if [ $IS_ENTERPRISE = "True" ]; then
 
 	# Odoo Enterprise install!
 
-	su $OE_USER -c "mkdir $OE_BASE/enterprise"
+	mkdir -p $OE_BASE/enterprise
 
-	su $OE_USER -c "mkdir $OE_BASE/enterprise/addons"
+	mkdir -p $OE_BASE/enterprise/addons
 
 
 
@@ -286,9 +286,9 @@ fi
 
 echo -e "\n---- Create custom module directory ----"
 
-su $OE_USER -c "mkdir $OE_BASE/custom" >> ./install_log
+mkdir -p $OE_BASE/custom >> ./install_log
 
-su $OE_USER -c "mkdir $OE_BASE/custom/addons" >> ./install_log
+mkdir -p $OE_BASE/custom/addons >> ./install_log
 
 
 
